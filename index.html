@@ -4,9 +4,74 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #050507;
+      color: #FFF;
+    }
+
+    .pagina {
+      display: flex;
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .menu-carros {
+      width: 220px;
+      padding: 24px 18px;
+      background: rgba(245, 8, 145, 0.2);
+      border-right: 2px solid #ef2b2d;
+      overflow-y: auto;
+      flex-shrink: 0;
+    }
+
+    .menu-carros ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .menu-carros li {
+      display: flex;
+      gap: 10px;
+      padding: 10px 6px;
+      border-bottom: 1px solid #29292e;
+    }
+
+    .posicao {
+      width: 22px;
+      color: #888;
+      font-weight: bold;
+      text-align: right;
+      border-right: 1px solid #FFF;
+    }
+  </style>
 </head>
 <body>
-  <h1>Corrida</h1>
-  <h2>Jogar o uno não dá money!!!</h2>
+  <div class="pagina">
+    <aside class="menu-carros">
+      <h1>Race 50</h1>
+
+      <ul>
+        <li><span class="posicao">1</span> Senna</li>
+        <li><span class="posicao">2</span> Leclerc</li>
+        <li><span class="posicao">3</span> Sainz</li>
+        <li><span class="posicao">4</span> Gasly</li>
+        <li><span class="posicao">5</span> Russel</li>
+      </ul>
+
+    </aside>
+    <main class="corrida">
+      Corrida
+
+    </main>
+  </div>
 </body>
 </html>
